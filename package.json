@@ -1,0 +1,34 @@
+{
+  "name": "barteryuk-adminService",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R min",
+    "dev": "NODE_ENV=development nodemon app.js",
+    "start": "NODE_ENV=production node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barteryuk/adminService.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barteryuk/adminService/issues"
+  },
+  "homepage": "https://github.com/barteryuk/adminService#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.16",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "mocha": "^7.2.0"
+  }
+}
