@@ -3,7 +3,6 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 const express = require("express");
-const PORT = require("./config/properties").PORT;
 const db = require("./config/database");
 const router = require("./routes");
 const errorHandler = require("./middlewares/errorhandler");
@@ -17,6 +16,4 @@ app.use(express.urlencoded({ extended: false }));
 app.use(router);
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-  console.log("Server adminService is running on: ", PORT);
-});
+module.exports = app;
