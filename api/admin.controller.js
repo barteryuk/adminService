@@ -39,7 +39,6 @@ exports.findAll = (req, res, next) => {
 };
 
 exports.findOne = (req, res, next) => {
-  console.log("ke findOne");
   Admins.getByName({ email: req.params.email }, (err, admin) => {
     if (err) {
       return next(err);
